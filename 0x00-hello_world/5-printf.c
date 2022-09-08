@@ -2,6 +2,7 @@
 
 /**
  * main - Entry point
+ * @main=void
  *
  * Description: Print "with proper grammar, but the outcome is a piece of art,"
  *
