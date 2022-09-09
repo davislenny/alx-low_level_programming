@@ -2,9 +2,9 @@
 /**
  * main - Entry point
  *
- * description: Print the size of various types of computer a C program runs on
+ * Description: Print the size of various types of computer a C program runs on
  *
- * return: Always 0(success)
+ * Return: Always 0(success)
  */
 
 int main(void)
