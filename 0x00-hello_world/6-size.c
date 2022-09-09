@@ -1,11 +1,12 @@
 #include<stdio.h>
 /**
- * main - entrypoint
+ * main - Entry point
  *
  * description: Print the size of various types of computer a C program runs on
  *
- * return: always 0(success)
+ * return: Always 0(success)
  */
+
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", (int) sizeof(char));
