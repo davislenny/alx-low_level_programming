@@ -22,6 +22,7 @@ int main(void)
 			{
 				putchar(a);
 				putchar(b);
+				putcher(c);
 
 			if (a != '7' || b != '8' || c != '9')
 			{
