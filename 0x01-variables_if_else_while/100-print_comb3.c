@@ -9,19 +9,27 @@
  */
 int main(void)
 {
-	int num = '01';
+	int a = '0';
+	int b = '0';
 
-	while (num <= '89')
+	while (a <= '9')
 	{
-		putchar(num);
-		if (num !='89')
+		b = a + 1;
+		while (b <= '9')
 		{
-			putchar(44);
+			putchar(a);
+			putchar(b);
+		}
+		if (a <= '7' || b <= '8')
+		{
+			putchar(',');
 			putchar(' ');
 		}
-		num++;
+		b++;
 	}
+	a++;
+
 	putchar('\n');
 
-	return (0);
+	return(0);
 }
