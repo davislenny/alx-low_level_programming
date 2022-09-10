@@ -13,10 +13,10 @@ int main(void)
 
 	while (n < 112)
 	{
-		putcher(n);
+		putchar(n);
 		n++;
 	}
-	putcher('\n');
+	putchar('\n');
 
 	return (0);
 }
