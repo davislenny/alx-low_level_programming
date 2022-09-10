@@ -9,20 +9,16 @@
  */
 int main(void)
 {
-	int n = 0;
-	int AF = 'a';
+	int n = 96;
 
-	while (n < 10)
+	while (n < 112)
 	{
-		putchar(n);
+		putcher(n);
 		n++;
 	}
-	while (AF <= 'f')
-	{
-		putchar(AF);
-		AF++;
-	}
-	putchar('\n');
+	putcher('\n');
 
 	return (0);
 }
+
+	
