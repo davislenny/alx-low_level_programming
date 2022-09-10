@@ -9,26 +9,25 @@
  */
 int main(void)
 {
-	int a = '0';
-	int b = '0';
+	int a;
+	int b;
 
-	while (a <= '9')
+	for (a = '0'; a <= '9'; a++)
 	{
-		b = a + 1;
-		while (b <= '9')
+		for (b = (a + 1); b <= '9'; b++)
 		{
 			putchar(a);
 			putchar(b);
+			
+			if (a != '8' || b != '9')
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		if (a != '8' || b != '9')
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		b++;
+		
 	}
-	a++;
-
+	
 	putchar('\n');
 
 	return (0);
