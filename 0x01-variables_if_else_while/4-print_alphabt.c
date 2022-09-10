@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Description: Print cases except q and e
  *
  * Return: Always 0 (Success)
