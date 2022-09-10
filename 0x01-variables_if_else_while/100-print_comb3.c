@@ -10,7 +10,7 @@
 int main(void)
 {
 	int a = '0';
-	int b = '0';
+	int b = '1';
 
 	while (a <= '9')
 	{
@@ -20,7 +20,7 @@ int main(void)
 			putchar(a);
 			putchar(b);
 		}
-		if (a <= '7' || b <= '8')
+		if (a != '8' || b != '9')
 		{
 			putchar(',');
 			putchar(' ');
@@ -31,5 +31,5 @@ int main(void)
 
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
