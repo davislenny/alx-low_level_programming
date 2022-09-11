@@ -22,16 +22,14 @@ int main(void)
 		for (c = a; c <= '9'; c++)
 		{
 
-		for (d = b + 1; d <= '9'; d++)
+		for (d >= '0'; d <= '9'; d++)
 		{
-			while (d = '0')
-			{
 			putchar(a);
 			putchar(b);
 			putchar(32);
 			putchar(c);
 			putchar(d);
-			}
+		
 
 			if (a != '8' || b != '7' || c != '8' || d != '8' || c >= d)
 			{
