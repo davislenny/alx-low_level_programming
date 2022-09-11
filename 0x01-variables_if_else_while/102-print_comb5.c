@@ -11,15 +11,13 @@ int main(void)
 {
 	int a, b, c, d;
 
-	while (a <= '9')
+	for (a = '0'; a <= '9'; a++)
 	{
-		while (b <= '9')
+		for (b = '0'; b <= '9'; b++)
 		{
-			c = a;
-			d = b + 1;
-			while (c <= '9')
+			for (c = a; c <= '9'; c++)
 			{
-				while (d <= '9')
+				for (d = b + 1; d <= '9'; d++)
 				{
 					putchar(a);
 					putchar(b);
@@ -31,14 +29,10 @@ int main(void)
 					putchar(44);
 					putchar(32);
 					}
-					d++;
+					d = '0';
 				}
-				d = '0';
-				c++;
 			}
-			b++;
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
