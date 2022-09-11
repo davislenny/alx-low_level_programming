@@ -15,8 +15,6 @@ int main(void)
 	int c;
 	int d;
 
-	d = '0';
-
 	for (a = '0'; a <= '9'; a++)
 	{
 	for (b = '0'; b <= '9'; b++)
@@ -26,11 +24,14 @@ int main(void)
 
 		for (d = b + 1; d <= '9'; d++)
 		{
+			while (d = '0')
+			{
 			putchar(a);
 			putchar(b);
 			putchar(32);
 			putchar(c);
 			putchar(d);
+			}
 
 			if (a != '8' || b != '7' || c != '8' || d != '8' || c >= d)
 			{
