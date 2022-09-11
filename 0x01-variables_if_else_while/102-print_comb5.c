@@ -30,15 +30,14 @@ int main(void)
 			putchar(c);
 			putchar(d);
 
-			d = '0';
-
 			if (a != '8' || b != '7' || c != '8' || d != '8' || c >= d)
 			{
 				putchar(44);
 				putchar(32);
 			}
 		}
-		
+			d = '0';
+
 
 		}
 	}
