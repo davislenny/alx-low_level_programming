@@ -29,7 +29,7 @@ int main(void)
 			putchar(32);
 			putchar(c);
 			putchar(d);
-		
+
 
 			if (a != '8' || b != '7' || c != '8' || d != '8' || c >= d)
 			{
