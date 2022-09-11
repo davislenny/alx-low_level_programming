@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -10,10 +9,7 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	int a, b, c, d;
 
 	while (a <= '9')
 	{
@@ -23,7 +19,6 @@ int main(void)
 			d = b + 1;
 			while (c <= '9')
 			{
-
 				while (d <= '9')
 				{
 					putchar(a);
@@ -31,8 +26,6 @@ int main(void)
 					putchar(32);
 					putchar(c);
 					putchar(d);
-
-
 					if (a != '8' || b != '7' || c != '8' || d != '8')
 					{
 					putchar(44);
@@ -47,8 +40,6 @@ int main(void)
 		}
 		a++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
