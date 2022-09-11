@@ -10,15 +10,17 @@
  */
 int main(void)
 {
-	int a = '0';
-	int b = '0';
-	int c = a;
-	int d = b + 1;
+	int a;
+	int b;
+	int c;
+	int d;
 
 	while (a <= '9')
 	{
 		while (b <= '9')
 		{
+			c = a;
+			d = b + 1;
 			while (c <= '9')
 			{
 
