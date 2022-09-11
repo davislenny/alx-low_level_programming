@@ -10,39 +10,42 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	int a = '0';
+	int b = '0';
+	int c = '0';
+	int d = '1';
 
-	for (a = '0'; a <= '9'; a++)
+	while (a <= '9')
 	{
-	for (b = '0'; b <= '9'; b++)
-	{
-		for (c = a; c <= '9'; c++)
+		while (b <= '9')
 		{
-
-		for (d = '1'; d <= '9'; d++)
-		{
-			putchar(a);
-			putchar(b);
-			putchar(32);
-			putchar(c);
-			putchar(d);
-
-
-			if (a != '8' || b != '7' || c != '8' || d != '8' || c >= d)
+			while (c <= '9')
 			{
-				putchar(44);
-				putchar(32);
+
+				while (d <= '9')
+				{
+					putchar(a);
+					putchar(b);
+					putchar(32);
+					putchar(c);
+					putchar(d);
+
+
+					if (a != '8' || b != '7' || c != '8' || d != '8')
+					{
+					putchar(44);
+					putchar(32);
+					}
+				}
+				d++;
+
 			}
+			c++;
 		}
-
-
-
-		}
+		b++;
 	}
-	}
+	a++;
+
 	putchar('\n');
 
 	return (0);
