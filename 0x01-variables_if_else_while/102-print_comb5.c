@@ -36,15 +36,15 @@ int main(void)
 					putchar(44);
 					putchar(32);
 					}
+					d++;
 				}
-				d++;
-
+				d = '0';
+				c++;
 			}
-			c++;
+			b++;
 		}
-		b++;
+		a++;
 	}
-	a++;
 
 	putchar('\n');
 
