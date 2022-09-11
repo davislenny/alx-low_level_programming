@@ -24,13 +24,13 @@ int main(void)
 					putchar(32);
 					putchar(c);
 					putchar(d);
-					if (a != '8' || b != '7' || c != '8' || d != '8')
+					if (a != '9' || b != '8' || c != '9' || d != '9')
 					{
 					putchar(44);
 					putchar(32);
 					}
-					d = '0';
 				}
+				d = '0';
 			}
 		}
 	}
