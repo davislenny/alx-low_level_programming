@@ -21,7 +21,7 @@ int main(void)
 	{
 		for (c = '0'; c <= '9'; c++)
 		{
- 
+
 		for (d = '1'; d <= '9'; d++)
 		{
 			putchar(a);
@@ -30,13 +30,15 @@ int main(void)
 			putchar(c);
 			putchar(d);
 
+			d = '0';
+
 			if (a != '8' || b != '7' || c != '8' || d != '8' || c >= d)
 			{
 				putchar(44);
 				putchar(32);
 			}
 		}
-		d = '0';
+		
 
 		}
 	}
