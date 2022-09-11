@@ -15,6 +15,8 @@ int main(void)
 	int c;
 	int d;
 
+	d = '0';
+
 	for (a = '0'; a <= '9'; a++)
 	{
 	for (b = '0'; b <= '9'; b++)
@@ -36,7 +38,7 @@ int main(void)
 				putchar(32);
 			}
 		}
-			d = '0';
+
 
 
 		}
