@@ -1,20 +1,20 @@
-#include"main.h"
-#include<stdio.h>
+#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  *
- * Descuription: Print alphabets
+ * Description: Print alphabets
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	char b;
 
-	for (c = 'a'; c <= 'z'; c++)
-		_putchar(c);
+	for (b = 'a'; b <= 'z'; b++)
+		putchar(b);
 
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
