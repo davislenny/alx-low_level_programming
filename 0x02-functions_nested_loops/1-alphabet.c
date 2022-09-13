@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Print alphabets
+ * Description: print "from a to z"
  *
  * Return: Always 0 (Success)
  */
