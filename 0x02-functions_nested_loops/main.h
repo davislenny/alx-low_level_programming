@@ -1,2 +1,5 @@
-int _putchar(char c);
-void print_alphabet(void);
+#ifndef main
+#define main
+int putchar(int character);
+int print_alphabet(void);
+#endif
