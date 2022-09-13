@@ -3,6 +3,7 @@
 /**
  * main - Entry point
  * Descriptio: Printing "_putchar"
+ * Return: Always 0 (Success)
  */
 
 int main(void)
