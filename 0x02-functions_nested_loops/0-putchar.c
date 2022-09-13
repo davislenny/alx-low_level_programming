@@ -1,13 +1,16 @@
 #include "main.h"
 #include <stdio.h>
-/* printing "_putchar" */
+/**
+ * main - Entry point
+ * Descriptio: Printing "_putchar"
+ */
 
 int main(void)
 {
 	char n[9] = "_putchar";
 	int i = 0;
 
-		for(i = 0; i < 8; i++)
+		for (i = 0; i < 8; i++)
 		{
 			putchar(n[i]);
 		}
