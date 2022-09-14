@@ -9,7 +9,6 @@
  */
 void print_alphabet(void)
 
-int main(void)
 {
 	char c = 'a';
 
@@ -18,5 +17,4 @@ int main(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-	return (0);
 }
