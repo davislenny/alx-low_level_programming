@@ -16,12 +16,13 @@ void times_table(void)
 			p = r * c;
 			a = p / 10;
 			b = p % 10;
-			while (r == o)
-			{
 			if (c == 0)
 			{
 				_putchar(0);
 			}
+			else if (r == 0)
+			{
+				_putchar(0);
 			}
 			else if (p < 10)
 			{
