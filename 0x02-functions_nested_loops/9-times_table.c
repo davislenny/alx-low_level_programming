@@ -20,12 +20,9 @@ void times_table(void)
 			{
 				_putchar(0);
 			}
-			else if (r == 0)
-			{
-				_putchar(0);
-			}
 			else if (p < 10)
 			{
+				_putchar(0);
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
@@ -33,6 +30,7 @@ void times_table(void)
 			}
 			else
 			{
+				_putchar(0);
 				_putchar(',');
 				_putchar(' ');
 				_putchar(a + '0');
