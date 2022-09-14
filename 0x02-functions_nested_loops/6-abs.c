@@ -3,24 +3,24 @@
 /**
  * _abs - the absolute value of an int
  *
- * @n: The integer entered
+ * @i: The integer entered
  *
- * Return: n (integer)
+ * Return: i (integer)
  */
 
-int _abs(int)
+int _abs(int i)
 {
-	if (n > 0)
+	if (i > 0)
 	{
 		return (n);
 	}
-	else if (n == 0)
+	else if (i == 0)
 	{
 		return (0);
 	}
 	else
 	{
-		return (-n);
+		return (-i);
 	}
 	_putchar('\n');
 }
