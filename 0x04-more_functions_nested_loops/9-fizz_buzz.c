@@ -7,6 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;
@@ -20,10 +21,11 @@ int main(void)
 		else if ((i % 3) == 0 && (i % 5) == 0)
 			printf("FizzBuzz");
 		else
-			putchar(i);
-		if (i != 100)
-		putchar(' ');
+			printf("%d", i);
+
+		if (i < 100)
+		printf(" ");
 	}
-	putchar('\n')
+	printf("\n");
 	return (0);
 }
