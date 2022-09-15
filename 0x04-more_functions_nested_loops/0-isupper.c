@@ -8,22 +8,14 @@
  * Return: 1 if c is uppercase, 0 otherwise
  */
 
-int _isupper(int c);
+int _isupper(int c)
 {
-	int result, a;
-
-	for (a >= 'A'; a <= 'Z'; a++)
+	if (c >= 'A' && c <= 'Z')
 	{
-		if (c == a)
-		{
-			result = 1;
-			break;
-
-		}
-		else
-		{
-			result = 0;
-		}
+		return (1);
 	}
-	return (result);
+	else
+	{
+		return(0);
+	}
 }
