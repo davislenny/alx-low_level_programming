@@ -6,9 +6,12 @@
  * @a: First integer
  * @b: Second integer
  *
- * Return: mul
+ * Return: product
  */
 int mul(int a, int b)
 {
-	return (a * b)
+	int p = a * b;
+
+	return (p);
+	_putcher('\n');
 }
