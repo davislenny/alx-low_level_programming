@@ -10,13 +10,20 @@
 
 int _isupper(int c);
 {
-	if (c >= 'A' && c <= 'Z')
+	int result, a;
+
+	for (a >= 'A'; a <= 'Z'; a++)
 	{
-		return (1);
+		if (c == a)
+		{
+			result = 1;
+			break;
+
+		}
+		else
+		{
+			result = 0;
+		}
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
+	return (result);
 }
