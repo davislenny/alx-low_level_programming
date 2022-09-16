@@ -16,6 +16,8 @@ void more_numbers(void)
 		{
 			_putchar(b);
 		}
+		c = '1';
+		d = '0';
 		for (c = '1'; c < '2'; c++)
 		{
 			for (d = '0'; d <= '4'; d++)
