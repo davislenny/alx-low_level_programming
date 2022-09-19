@@ -2,14 +2,15 @@
 #include <stdio.h>
 /**
  * print_array - prints n elements of an array of integers
- * @a: pointer variable 
+ * @a: pointer variable
  * @n: number of array elements
  */
 void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; i <= n - 1; i++)
+	i = 0;
+	while (i < n)
 	{
 		printf("%d", a[i]);
 
@@ -18,6 +19,7 @@ void print_array(int *a, int n)
 			_putchar(',');
 			_putchar(' ');
 		}
+		i++;
 	}
 	_putchar('\n');
 }
