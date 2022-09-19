@@ -17,7 +17,6 @@ int _strlen(char *s)
 	return (length);
 }
 
-
 /**
  * puts_half - prints half of the string
  * @str: Pointer to the string
