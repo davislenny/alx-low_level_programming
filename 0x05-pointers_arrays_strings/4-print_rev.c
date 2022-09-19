@@ -12,13 +12,13 @@ void print_rev(char *s)
 
 	while (*s != '\0')
 	{
-		length++;
+		length++;/*obtain stringth lenth*/
 		s++;
 	}
-	--s;
+	--s;/* moveback to the last string character*/
 	for (i = length; i > 0; i--)
 	{
-		_putchar(*s--);
+		_putchar(*s--);/*print the string in reverse*/
 	}
 	_putchar('\n');
 }
