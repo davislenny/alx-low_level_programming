@@ -29,8 +29,8 @@ void puts2(char *str)
 	if (str[a] != '\0' && a < _strlen(str))
 	{
 		_putchar(str[a]);
+		a = a + 2;
 	}
-	a = a + 2;
 
 	_putchar('\n');
 }
