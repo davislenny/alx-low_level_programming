@@ -11,7 +11,7 @@ int _strlen(char *s)
 	length = 0;
 	while (*s != '\0')
 	{
-		length++;
+		length++;/* obtain string length */
 		s++;
 	}
 	return (length);
@@ -23,10 +23,10 @@ int _strlen(char *s)
  */
 void puts2(char *str)
 {
-	int a;
+	int a;/* variable start position */
 
 	for (a = 0; str[a] != '\0' && a < _strlen(str); a += 2)
-	{
+	{/* increment var a by +2 for every print */
 		_putchar(str[a]);
 	}
 
