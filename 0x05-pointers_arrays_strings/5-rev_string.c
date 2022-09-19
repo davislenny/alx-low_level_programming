@@ -30,7 +30,7 @@ void rev_string(char *s)
 	b = _strlen(s) - 1;/* last character position */
 
 	while (a < b)
-	{/* interchange positional values to obtain last character position for each printout */
+	{/* interchange positional values to obtain last character position */
 		c = s[a];
 		s[a] = s[b];
 		s[b] = c;
