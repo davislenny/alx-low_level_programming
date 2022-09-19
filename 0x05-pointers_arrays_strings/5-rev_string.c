@@ -20,7 +20,7 @@ void rev_string(char *s)
 		s++;
 	}
 	--s;
-	for (i = length; i > 0; i++)
+	for (i = length; i > 0; i--)
 	{
 		_putchar(*s--);/*print string in reverse*/
 	}
