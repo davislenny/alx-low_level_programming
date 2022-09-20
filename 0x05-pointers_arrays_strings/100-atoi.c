@@ -9,9 +9,9 @@
 int _atoi(char *s)
 {
 
-	while(*s++)
+	while (*s)
 	{
-		if (*s <= '9')
+		if (*s <= '9' && *s != '\0')
 			return (*s++);
 	}
 	return (0);
