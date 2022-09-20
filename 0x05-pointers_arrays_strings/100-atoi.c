@@ -8,12 +8,11 @@
 
 int _atoi(char *s)
 {
-	char i;
 
-	while(*s)
+	while(*s++)
 	{
 		if (*s <= '9')
-			i = s++;
+			return (*s++);
 	}
-	return (i);
+	return (0);
 }
