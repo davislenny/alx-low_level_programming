@@ -10,7 +10,7 @@ int _strlen(char *s)
 
 	while (*s != '\0')
 	{
-		lengh++;
+		length++;
 		s++;
 	}
 	return (length);
@@ -69,7 +69,7 @@ int _atoi(char *s)
 	while ((s[find_num(s)] >= '0' && s[find_num(s)] <= '9') && (find_num(s) <= _strlen(s)))
 	{
 		dig += 1;
-		find_num(s)++;
+		(find_num(s))++;
 	}
 	i = 1;
 	for (i = dig2; i < (dig2 + dig); i++)
