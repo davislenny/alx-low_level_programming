@@ -15,11 +15,12 @@ char *_strchr(char *s, char c)
 	}
 	return (NULL);
 }
+
 /**
  * _strspn - gets the length of a prefix substring
  * @s: string to be scanned
  * @accept: string containg characters to be matched
- * Return: numbet of mached bytes
+ * Return: number of matched bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
