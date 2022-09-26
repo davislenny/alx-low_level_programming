@@ -3,7 +3,7 @@
  * _memcpy - copies memory area
  * @dest: memory address to receive a copy
  * @src: memory address to copy from
- * Return: a poninter to dest
+ * Return: a pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -12,6 +12,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	for (i = 0; i < n; i++)
 	{
 		dest[i] = src[i];
+		*dest = dest[i];
 	}
 	return (dest);
 }
