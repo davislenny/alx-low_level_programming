@@ -1,27 +1,34 @@
 #include "main.h"
 /**
+ * _strchr - locates a character in a string
+ * @s: the string
+ * @c: the fist located character
+ * Return: a pointer to the character
+ */
+char *_strchr(char *s, char c)
+{
+	while (*s)
+	{
+		if (*s == c)
+			return (s);
+		s++;
+	}
+	return (NULL);
+}
+/**
  * _strspn - gets the length of a prefix substring
  * @s: string to be scanned
- * @accept: string containing characters to be matched
- * Return: number of matched characters
+ * @accept: string containg characters to be matched
+ * Return: numbet of mached bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
-	int a;
+	unsigned int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s && _strchr(accept,*s))
 	{
-		for (j = 0; accept[j] != '\0'; j++)
-		{
-			a = 0;
-			if (s[i] == accept[j] && (*(s + i + 1) != ' ' || *(s + i + 1) != ','))
-			{
-				a++;
-				return (a);
-			}
-
-		}
+		s++;
+		i++;
 	}
-	return (0);
+	return (i);
 }
