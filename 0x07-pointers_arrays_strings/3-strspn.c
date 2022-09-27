@@ -7,13 +7,14 @@
  */
 char *_strchr(char *s, char c)
 {
-	while (*s)
-	{
-		if (*s == c)
-			return (s);
-		s++;
-	}
-	return (NULL);
+	int i = 0;
+
+	while (s[i] != '\0' && s[i] != c)
+		i++;
+	if (s[i] == c)
+		return (&s[i]);
+	else
+		return (NULL);
 }
 
 /**
@@ -26,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 
-	while (*s && _strchr(accept,*s))
+	while (*s && _strchr(accept, *s))
 	{
 		s++;
 		i++;
