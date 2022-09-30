@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	while (--argc)
 	{
-		for(c = argv[argc]; *c; c++)
+		for (c = argv[argc]; *c; c++)
 			if (*c < '0' || *c > '9')
 			{
 				printf("Error\n");
