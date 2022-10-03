@@ -19,6 +19,6 @@ char *_strdup(char *str)
 	if (s == NULL)
 		return (NULL);
 	for (i++; i--;)
-		s[i] = --*str;
+		s[i] = *--str;
 	return (s);
 }
