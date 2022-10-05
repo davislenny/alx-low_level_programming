@@ -29,10 +29,9 @@ int wrdCnt(char *str)
  */
 char **strtow(char *str)
 {
-	int i, j, k, l, m, n;
+	int i, j, k, l, m = 0, n = 0;
 	char **s;
 
-	m = n = 0;
 	if (!*str || !str)
 		return (NULL);
 	m = wrdCnt(str);
@@ -48,18 +47,17 @@ char **strtow(char *str)
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
 			for (j = i; str[i + j] != ' ' && str[i + j]; j++)
+				;
+			j++;
+			s[n] = (char *)malloc(j * sizeof(char));
+			j--;
+			if (s[n] == NULL)
 			{
-				j++;
-				s[n] = (char *)malloc(j * sizeof(char));
-				j--;
-				if (s[n] == NULL)
-				{
 				for (k = 0; k < n; k++)
 					free(s[k]);
 				free(s[m - 1]);
 				free(s);
 				return (NULL);
-				}
 			}
 			for (l = 0; l < j; l++)
 				s[n][l] = '\0';
