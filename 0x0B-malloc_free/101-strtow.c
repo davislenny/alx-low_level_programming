@@ -1,9 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
-int wrdCnt(char *str);
-int **strtow(char *str);
-
 /**
  * wrdCnt - counts words in str
  * @str: the string
@@ -31,7 +27,7 @@ int wrdCnt(char *str);
  * @str: the string
  * Return: pointer to the string array
  */
-int **strtow(char *str)
+char **strtow(char *str)
 {
 	int i, j, k, l, m, n;
 	char **s;
@@ -54,7 +50,7 @@ int **strtow(char *str)
 			for (j = i; str[i + j] != ' ' && str[i + j]; j++)
 				;
 			j++;
-			s[n] = (char *)malloc(j * sozeof(char));
+			s[n] = (char *)malloc(j * sizeof(char));
 			j--;
 			if (s[n] == NULL)
 			{
