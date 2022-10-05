@@ -5,7 +5,7 @@
  * @str: the string
  * Return: number of words
  */
-int wrdCnt(char *str);
+int wrdCnt(char *str)
 {
 	int i, j = 0;
 
