@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	length = _strlen(s1) + k + 1;
 	pr = malloc(length * sizeof(*pr));
 	if (!pr)
-		return (NUL);
+		return (NULL);
 	for (i = 0; s1[i] != '\0; i++)
 		pr[i] = s1[i];
 	for (j = o; j < k; j++)
