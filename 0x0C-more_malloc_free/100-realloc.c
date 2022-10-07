@@ -4,7 +4,7 @@
  * _realloc - reallocates memory
  * @ptr: a pointer to the memory previously allocated
  * with a call to malloc: malloc(old_size)
- * @old_size: mem size allocated using malloc 
+ * @old_size: mem size allocated using malloc
  * @new_size: mem size reallocated using realloc
  * Return: pointer to the reallocated mem
  */
