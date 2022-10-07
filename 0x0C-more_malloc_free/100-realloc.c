@@ -4,7 +4,7 @@
  * _realloc - reallocates memory
  * @ptr: a pointer to the memory previously allocated
  * with a call to malloc: malloc(old_size)
- * @old_size: mem size allocated by 
+ * @old_size: mem size allocated using malloc 
  * @new_size: mem size reallocated using realloc
  * Return: pointer to the reallocated mem
  */
@@ -20,7 +20,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (ptr);
 
 	pr = malloc(new_size);
-	i (!pr)
+	if (!pr)
 		return (NULL);
 	old_size = old_size < new_size ? old_size : new_size;
 	while (old_size--)
