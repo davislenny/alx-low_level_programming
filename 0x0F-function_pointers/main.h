@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int _putchar(char c);
-me(char *name, void (*f)(char *));
+void print_name(char *name, void (*f)(char *));
 
 
 #endif /* MAIN_H */
