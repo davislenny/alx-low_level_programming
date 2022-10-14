@@ -6,7 +6,7 @@
  * @b: 2nd number
  * Return: sum
  */
-int op_add(int a, int )
+int op_add(int a, int b)
 {
 	return (a + b);
 }
@@ -16,7 +16,7 @@ int op_add(int a, int )
  * @b: 2nd num
  * Return: diff
  */
-int op_sub (int a, int b)
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
