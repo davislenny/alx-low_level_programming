@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdlib.h>
 /**
  * main - check the code
  * @argc: arg count
