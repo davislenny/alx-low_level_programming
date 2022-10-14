@@ -3,6 +3,7 @@
  * print_numbers - prints numbers
  * @separator: string between numbers
  * @n: number of integers
+ * @...: argument integers
  * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
