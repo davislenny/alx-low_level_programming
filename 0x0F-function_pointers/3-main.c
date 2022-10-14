@@ -7,7 +7,8 @@
  */
 int main(int argc, char **argv)
 {
-	int (*func)(int, int), a, b;
+	int a, b;
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -20,11 +21,6 @@ int main(int argc, char **argv)
 
 	func = get_op_func(argv[2]);
 	if (!func)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
 	{
 		printf("Error\n");
 		exit(98);
