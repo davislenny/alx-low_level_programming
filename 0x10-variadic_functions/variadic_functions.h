@@ -4,6 +4,17 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * struct print - structure
+ * @let: data type
+ * @func: function pointer
+ */
+typedef struct print
+{
+	char c;
+	void (*func) (va_list);
+} print_data;
+
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
