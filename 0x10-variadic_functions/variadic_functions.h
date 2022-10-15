@@ -6,7 +6,7 @@
 
 /**
  * struct print - structure
- * @let: data type
+ * @c: data type
  * @func: function pointer
  */
 typedef struct print
