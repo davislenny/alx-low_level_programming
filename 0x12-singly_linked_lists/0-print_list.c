@@ -14,6 +14,6 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		i++;
 	}
-	free(str);
+	free(h->str);
 	return (i);
 }
