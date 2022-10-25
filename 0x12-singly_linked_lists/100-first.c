@@ -1,12 +1,12 @@
 #include "lists.h"
 
-void my_Func(void) __attribute__((contructor));
+void first(void)__attribute__((constructor));
 
 /**
- * my_Func - executes before main
+ * first - executes before main
  * Return: void
  */
-void my_Func(void)
+void first(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
