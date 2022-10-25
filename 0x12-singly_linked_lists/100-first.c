@@ -8,6 +8,6 @@ void my_Func(void) __attribute__((contructor));
  */
 void my_Func(void)
 {
-	printf("You're beat! and yet, you must allow,\n
-			I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
