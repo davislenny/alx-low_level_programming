@@ -5,8 +5,10 @@
 #include <string.h>
 #include <stdio.h>
 
-/**struct listint_s - singly linked list
+/**
+ * struct listint_s - singly linked list
  * @n: integer
+ * @next: points to the next node
  *
  * Description: singly linked list node structure
  */
@@ -20,4 +22,4 @@ int _putchar(char c);
 size_t print_listint(const listint_t *h);
 
 
-#endif /* LISTs_h */
+#endif /* LISTS_h */
