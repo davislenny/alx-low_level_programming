@@ -9,13 +9,13 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *new_node = mallo(sizeof(listint_t));
+	listint_t *new_node = malloc(sizeof(listint_t));
 	listint_t *temp = *head;
 
 	if (!head || !new_node)
 		return (NULL);
 
-	new_node->next = NULL:
+	new_node->next = NULL;
 	new_node->n = n;
 
 	if (temp)
