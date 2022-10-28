@@ -2,7 +2,7 @@
 
 /**
  * delete_nodeint_at_index - deletes the node at index
- * @head; pointer to head node
+ * @head: pointer to head node
  * @index: the index fo deletion
  * Return: 1 if it succeeded, -1 if it failed
  */
