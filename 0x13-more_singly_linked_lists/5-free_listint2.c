@@ -6,7 +6,7 @@
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *temp, *new_node;
+	listint_t *temp;
 
 	if (!head)
 		return;
@@ -14,9 +14,8 @@ void free_listint2(listint_t **head)
 	temp = *head;
 	while (temp)
 	{
-		new_node = temp;
 		temp = temp->next;
-		free(temp);
+		free(*head);
 	}
 	*head = NULL;
 }
