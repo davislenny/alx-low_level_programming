@@ -18,15 +18,17 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (!text_content)
 	{
-		len = 0;
-		text_content = "";
+		close(fd);
+		return (1);
 	}
-	else
-		len = strlen(text_content);
 
+	len = strlen(text_content);
 	bytes_w = write(fd, text_content, len);
-	if (!bytes_w)
+	if (bytes_w == -1 || bytes_w != len)
+	{
+		close(fd);
 		return (-1);
+	}
 	close(fd);
 	return (1);
 }
