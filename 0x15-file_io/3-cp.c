@@ -29,9 +29,11 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, ERR2, argv[2]), exit(99);
 
 	while ((bytes_r = read(fd0, buf, BUFF_SIZE)) > 0)
-		if ((bytes_w = write(fd1, buf, bytes_r)) != bytes_r)
+	{
+		bytes_w = write(fd1, buf, bytes_r);
+		if (bytes_w != bytes_r)
 			dprintf(STDERR_FILENO, ERR2, argv[2]), exit(99);
-
+	}
 	if (bytes_r == -1)
 		dprintf(STDERR_FILENO, ERR1, argv[1]), exit(98);
 
