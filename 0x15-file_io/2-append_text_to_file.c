@@ -9,7 +9,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	ssoze_t bytes_w, len;
+	ssize_t bytes_w, len;
 
 	if (!filename)
 		return (-1);
@@ -29,6 +29,6 @@ int append_text_to_file(const char *filename, char *text_content)
 		close(fd);
 		return (-1);
 	}
-	cloe(fd);
+	close(fd);
 	return (1);
 }
