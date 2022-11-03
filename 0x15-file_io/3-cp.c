@@ -3,7 +3,7 @@
 #define ERR0 "Usage: cp file_from file_to\n"
 #define ERR1 "Error: Can't read from file %s\n"
 #define ERR2 "Error: Can't write to %s\n"
-#define ERR3 "Can't close fd %d\n"
+#define ERR3 "Error: Can't close fd %d\n"
 
 /**
  * main - entry point
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	if (fd0)
 		dprintf(STDERR_FILENO, ERR3, fd0), exit(100);
 	if (fd1)
-		dprintf(STDERR_FILENO, ERR3, fd0), exit(100);
+		dprintf(STDERR_FILENO, ERR3, fd1), exit(100);
 
 	return (EXIT_SUCCESS);
 }
