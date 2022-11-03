@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	if (fd0)
 		dprintf(STDERR_FILENO, ERR3, fd0), exit(100);
 	if (fd1)
-		dprintf(STDERR_FILENO, ERR3, fd1), exit(100);
+		dprintf(STDERR_FILENO, ERR3, fd0), exit(100);
 
 	return (EXIT_SUCCESS);
 }
