@@ -3,7 +3,7 @@
 #define ERR0 "Usage: cp file_from file_to\n"
 #define ERR1 "Error: Can't read from file %s\n"
 #define ERR2 "Error: Can't write to %s\n"
-#define ERR3 "Can't close fd FD_VALUE %d\n"
+#define ERR3 "Can't close fd %d\n"
 
 /**
  * main - entry point
