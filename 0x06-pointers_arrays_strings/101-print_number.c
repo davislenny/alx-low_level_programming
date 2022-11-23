@@ -8,14 +8,13 @@
 void print_number(int n)
 {
 	int i, j;
-	int current = 0;
 
 	if (n < 0)
 		_putchar('-');
 	
 	for (j = 0, i = 1000000000; i > 0; i /= 10)
 	{
-		current = (n / i) % 10;
+		int current = (n / i) % 10;
 		
 		current = current < 0 ? -current : current;
 		if (current || j || i == 1)
