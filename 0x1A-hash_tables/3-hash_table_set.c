@@ -20,6 +20,7 @@ hash_node_t *create_item(const char *key, const char *value)
 		return (0);
 	}
 	item->value = strdup(value);
+	if (!item->value)
 	{
 		free(item->key);
 		free(item);
