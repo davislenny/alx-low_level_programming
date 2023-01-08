@@ -13,7 +13,7 @@
  * @value: The value corresponding to akey
  * @next: A pointer to the next node of the List
  */
-tpedef struct hash_node_s
+typedef struct hash_node_s
 {
 	char *key;
 	char *value;
