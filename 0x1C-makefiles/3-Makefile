@@ -1,6 +1,6 @@
 CC = gcc # compiler
-SRC := $(wildcard *.c)
-OBJ := $(SRC:.c=.o)
+SRC = main.c scool.c
+OBJ = $(SRC:.c=.o)
 NAME =  school # executable
 RM = rm -f
 
