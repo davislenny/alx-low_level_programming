@@ -1,28 +1,17 @@
-CC = gcc # compiler
+CC = gcc
 SRC = main.c scool.c
 OBJ = $(SRC:.c=.o)
-NAME =  school # executable
+NAME =  school
 RM = rm -f
-
-# make all == makes executable
-
 all : $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
-
-# deletes tmp files & executable
 
 clean :
 	$(RM) *~ $(NAME)
 
-# deletes object files
-
 oclean :
 	$(RM) $(OBJ)
 
-# deletes all (tmp files, executable, & obj files)
-
 fclean : clean oclean
-
-# forces recompilation
 
 re : fclean all
